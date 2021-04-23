@@ -1,0 +1,23 @@
+
+nav {
+
+}
+
+ul {
+    display: flex;
+    flex-flow: nowrap row;
+    list-style: none;
+}
+
+li {
+    padding: 15px 0;
+    margin: 0 25px;
+}
+
+li a {
+    text-decoration: none;
+}
+
+a, a:hover {
+    text-decoration: none;
+}

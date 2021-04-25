@@ -11,7 +11,6 @@ const Product = () => (
     <a className="info" href="google.com">
       <p>A pair of shoes which can be used to run in.</p>
     </a>
-    <input />
     <button className="button" type="button">Add to Cart</button>
   </div>
 );

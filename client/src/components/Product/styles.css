@@ -20,3 +20,8 @@ a:visited {
 .info:hover, p:hover {
     text-decoration: none;
 }
+
+.price {
+    margin-top: 2px;
+    color: #990000;
+}

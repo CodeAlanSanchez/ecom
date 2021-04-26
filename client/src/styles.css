@@ -83,7 +83,7 @@ input, button {
 
 button {
   cursor: pointer;
-  background-image: linear-gradient(to top, #ffb619 , #ffef5c 90%, #ffffff 100%);
+  background-image: linear-gradient(to top, #ffb619 , #ffef5c 85%, #ffffff 100%);
 }
 
 button:hover {

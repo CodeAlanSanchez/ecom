@@ -1,13 +1,12 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
-import './styles.css';
+import styles from './header.module.css';
 
 const Header = () => (
   <nav>
     <ul>
       <li>
-        <a href="/">
-          Home
-        </a>
+        <a href="/">Home</a>
       </li>
       <li>
         <a href="/about">About</a>

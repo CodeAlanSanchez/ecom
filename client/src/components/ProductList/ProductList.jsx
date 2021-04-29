@@ -1,9 +1,9 @@
 import React from 'react';
 import Product from '../Product/Product';
-import './styles.css';
+import styles from './productList.module.css';
 
 const ProductList = () => (
-  <div className="product-list">
+  <div className={styles.productList}>
     <Product />
     <Product />
     <Product />

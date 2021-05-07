@@ -8,8 +8,8 @@ export default (products = [], action = {}) => {
     case FETCH_CART:
       return action.payload;
     case ADD_TO_CART:
-      return action.payload;
+      return [...products, action.payload];
     case REMOVE_FROM_CART:
-      return action.payload;
+      return products.filter((product) => product !== action.payload);
   }
 };

@@ -1,19 +1,22 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 import styles from './product.module.css';
 import { addToCart } from '../../actions/cartActions';
 
-const Product = ({ item }) => {
+const Product = ({ item = {} }) => {
   const dispatch = useDispatch();
+  const history = useHistory();
 
   const handleAdd = () => {
-    dispatch(addToCart(item));
+    dispatch(addToCart({ ...item, amount: 1 }));
+    history.push('/cart');
   };
 
   return (
     <div className={styles.product}>
-      <a href="google.com">
-        <img alt={item.name} />
+      <a href="product">
+        <img alt={item.name} src={item.image} />
         <h5>{item.name}</h5>
         <h6>{item.brand}</h6>
       </a>

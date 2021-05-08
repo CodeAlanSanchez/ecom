@@ -14,10 +14,12 @@ export const getProducts = async (req, res) => {
 export const createProduct = async (req, res) => {
   try {
     const product = req.body;
+    console.log(product);
 
     const newProduct = new Product(product);
+    console.log(newProduct);
 
-    await Product.save(newProduct);
+    await newProduct.save();
 
     res.status(201).json(newProduct);
   } catch (error) {

@@ -1,19 +1,32 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import styles from './product.module.css';
+import { addToCart } from '../../actions/cartActions';
 
-const Product = () => (
-  <div className={styles.product}>
-    <a href="google.com">
-      <img alt="product" />
-      <h5>Athletic Shoes</h5>
-      <h6>Nike</h6>
-    </a>
-    <a className={styles.info} href="google.com">
-      <p>A pair of shoes which can be used to run in.</p>
-    </a>
-    <p className={styles.price}>$99.99</p>
-    <button className={styles.button} type="button">Add to Cart</button>
-  </div>
-);
+const Product = ({ item }) => {
+  const dispatch = useDispatch();
+
+  const handleAdd = () => {
+    dispatch(addToCart(item));
+  };
+
+  return (
+    <div className={styles.product}>
+      <a href="google.com">
+        <img alt={item.name} />
+        <h5>{item.name}</h5>
+        <h6>{item.brand}</h6>
+      </a>
+      <a className={styles.info} href="google.com">
+        <p>{item.description}</p>
+      </a>
+      <p className={styles.price}>
+        $
+        {item.price}
+      </p>
+      <button className={styles.button} type="button" onClick={() => handleAdd()}>Add to Cart</button>
+    </div>
+  );
+};
 
 export default Product;

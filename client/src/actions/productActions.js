@@ -5,7 +5,7 @@ import {
 
 export const getProducts = () => async (dispatch) => {
   try {
-    const { data } = api.fetchProducts();
+    const { data } = await api.fetchProducts();
 
     dispatch({ type: FETCH_PRODUCTS, payload: data });
   } catch (error) {
@@ -15,7 +15,7 @@ export const getProducts = () => async (dispatch) => {
 
 export const createProduct = (product) => async (dispatch) => {
   try {
-    const { data } = api.createProduct(product);
+    const { data } = await api.createProduct(product);
 
     dispatch({ type: CREATE_PRODUCT, payload: data });
   } catch (error) {
@@ -25,7 +25,7 @@ export const createProduct = (product) => async (dispatch) => {
 
 export const updateProduct = (product, id) => async (dispatch) => {
   try {
-    const { data } = api.updateProduct(product, id);
+    const { data } = await api.updateProduct(product, id);
 
     dispatch({ type: UPDATE_PRODUCT, payload: data });
   } catch (error) {
@@ -35,7 +35,7 @@ export const updateProduct = (product, id) => async (dispatch) => {
 
 export const deleteProduct = (id) => async (dispatch) => {
   try {
-    const { data } = api.deleteProduct(id);
+    const { data } = await api.deleteProduct(id);
 
     dispatch({ type: REMOVE_PRODUCT, payload: data });
   } catch (error) {

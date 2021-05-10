@@ -29,7 +29,7 @@
 
 .product {
   display: flex;
-  margin: 25px 30% 0 0;
+  margin: 5% 5% 0 0;
 }
 
 .product img {
@@ -55,6 +55,10 @@
 
 .price {
     color: #990000;
+}
+
+.empty {
+    padding: 5%;
 }
 
 hr {

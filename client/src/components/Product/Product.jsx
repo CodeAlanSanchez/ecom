@@ -15,19 +15,21 @@ const Product = ({ item = {} }) => {
 
   return (
     <div className={styles.product}>
-      <a href="product">
-        <img alt={item.name} src={item.image} />
-        <h5>{item.name}</h5>
-        <h6>{item.brand}</h6>
-      </a>
-      <a className={styles.info} href="google.com">
-        <p>{item.description}</p>
-      </a>
-      <p className={styles.price}>
-        $
-        {item.price}
-      </p>
-      <button className={styles.button} type="button" onClick={() => handleAdd()}>Add to Cart</button>
+      <img alt={item.name} src={item.image} />
+      <div>
+        <a href="/">
+          <h5>{item.name}</h5>
+          <h6>{item.brand}</h6>
+        </a>
+        <a className={styles.info} href="/">
+          <p>{item.description}</p>
+        </a>
+        <p className={styles.price}>
+          $
+          {item.price}
+        </p>
+        <button className={styles.button} type="button" onClick={() => handleAdd()}>Add to Cart</button>
+      </div>
     </div>
   );
 };

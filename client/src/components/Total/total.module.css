@@ -1,3 +1,30 @@
 .total {
-    
+    padding: 5% 10%;
+    min-width: 400px;
+}
+
+.item {
+    padding: 5% 0;
+}
+
+.price {
+    color: #990000;
+}
+
+.total button {
+    margin: 15% 0;
+    text-align: center;
+    border-radius: 25px;
+    width: 80%;
+    height: 40px;
+    background-image: linear-gradient(to top, #ffb619 , #ffef5c 85%, #ffffff 100%);
+}
+
+.total button:hover {
+    cursor: not-allowed;
+}
+
+.total button:focus {
+    border: 1px solid #666666;
+    box-shadow: none;
 }

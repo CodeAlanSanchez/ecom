@@ -19,7 +19,7 @@ const Product = ({ item = {} }) => {
       <div>
         <a href="/">
           <h5>{item.name}</h5>
-          <h6>{item.brand}</h6>
+          <h6>{item.company}</h6>
         </a>
         <a className={styles.info} href="/">
           <p>{item.description}</p>

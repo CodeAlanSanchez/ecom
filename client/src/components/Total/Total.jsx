@@ -11,13 +11,16 @@ const Total = () => {
       <h1>Summary</h1>
       <hr />
       {items.map((item) => (
-        <div className={styles.item}>
-          <h5>{item.name}</h5>
-          <p className={styles.price}>{item.price}</p>
-        </div>
+        <>
+          <div className={styles.item}>
+            <h5>{item.name}</h5>
+            <p className={styles.price}>{item.price}</p>
+          </div>
+          <hr />
+        </>
       ))}
       <hr />
-      <p>
+      <p className={styles.totalPrice}>
         <b>
           Total:
           {' '}

@@ -7,12 +7,14 @@ import ProductDetails from './components/ProductDetails/ProductDetails';
 import Header from './components/Header/Header';
 import Cart from './components/Cart/Cart';
 import { getProducts } from './actions/productActions';
+import { getCart } from './actions/cartActions';
 
 const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getProducts());
+    dispatch(getCart());
   }, [dispatch]);
 
   return (

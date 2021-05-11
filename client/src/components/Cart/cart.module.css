@@ -3,24 +3,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
     height: 100%;
+    width: 100%;
 }
 
 .cart {
-    padding: 0px 15%;
+    padding: 0 10%;
     width: 100%;
     margin: 50px 0;
 }
 
-.cartContainer {
+.cartItems {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 75%;
+}
+
+.cartThing {
     display: flex;
     flex-flow: row nowrap;
 }
 
 .heading {
     background: #efefef;
-    padding: 10px;
+    padding: 1% 2%;
 }
 
 .heading h1 {
@@ -29,7 +35,7 @@
 
 .product {
   display: flex;
-  margin: 5% 5% 0 0;
+  margin: 1% 5% 1% 0;
 }
 
 .product img {
@@ -42,15 +48,16 @@
     width: 140px;
 }
 
-.info {
+.info h5, .info h6{
     display: flex;
     flex-flow: column nowrap;
+    font-weight: 400;
     width: 280px;
     margin: 0 25px;
 }
 
 .description {
-    color: #8a8a8a;
+    color: #747474;
 }
 
 .price {

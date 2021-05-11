@@ -4,11 +4,15 @@
 }
 
 .item {
-    padding: 5% 0;
+    padding: 2% 0;
 }
 
 .price {
     color: #990000;
+}
+
+.totalPrice {
+    padding: 2% 0;
 }
 
 .total button {

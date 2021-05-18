@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const url = 'http://localhost:5000/api/products';
+const BASE_URL = process.env.REACT_APP_BASE_URL;
+
+const url = `${BASE_URL}/api/products`;
 
 export const fetchProducts = () => axios.get(`${url}`);
 export const createProduct = (product) => axios.post(`${url}`, product);

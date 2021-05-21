@@ -8,6 +8,7 @@ import Header from './components/Header/Header';
 import Cart from './components/Cart/Cart';
 import { getProducts } from './actions/productActions';
 import { getCart } from './actions/cartActions';
+import About from './components/About/About';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -26,6 +27,7 @@ const App = () => {
           <Route path={['/checkout']} component={Checkout} />
           <Route path={['/cart']} component={Cart} />
           <Route path={['/product']} component={ProductDetails} />
+          <Route path={['/about']} component={About} />
         </Switch>
       </main>
     </div>

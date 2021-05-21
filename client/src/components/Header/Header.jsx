@@ -1,18 +1,25 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './header.module.css';
 
 const Header = () => (
   <nav>
     <ul>
       <li>
-        <a href="/">Home</a>
+        <Link to="/">
+          Home
+        </Link>
       </li>
       <li>
-        <a href="/about">About</a>
+        <Link to="/about">
+          About
+        </Link>
       </li>
       <li>
-        <a href="/cart">Cart</a>
+        <Link to="/cart">
+          Cart
+        </Link>
       </li>
     </ul>
   </nav>
